@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="940" viewBox="0 0 1400 940" role="img" aria-labelledby="title desc">
+<title id="title">任务状态与取消竞争</title><desc id="desc">queued进入processing。处理可成功或失败；取消先进入cancel_requested，停止后cancelled，已完成提交则仍可ready。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6d837a"/></marker></defs>
+<rect x="0" y="0" width="1400" height="940" rx="0" fill="#f5f3ec"/>
+<text x="64" y="53" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="700" fill="#2f6659" text-anchor="start">05 / ASYNC STATES</text>
+<text x="64" y="110" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="39" font-weight="700" fill="#172b31" text-anchor="start">取消请求与最终结果，是两件需要确认的事</text>
+<text x="64" y="151" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="400" fill="#596b6a" text-anchor="start">任务终态以执行侧的持久结果为准；界面按结果说明已完成或已停止的部分。</text>
+<rect x="70" y="220" width="270" height="100" rx="12" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<text x="205.0" y="260" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b31" text-anchor="middle">queued</text>
+<text x="205.0" y="293" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="middle">等待处理</text>
+<rect x="535" y="220" width="330" height="100" rx="12" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<text x="700.0" y="260" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b31" text-anchor="middle">processing</text>
+<text x="700.0" y="293" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="middle">正在读取与保存</text>
+<rect x="1060" y="220" width="270" height="100" rx="12" fill="#e1efd2" stroke="#d8ded7" stroke-width="1"/>
+<text x="1195.0" y="260" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b31" text-anchor="middle">ready</text>
+<text x="1195.0" y="293" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="middle">必要结果已保存</text>
+<rect x="535" y="467" width="330" height="100" rx="12" fill="#f1e8cc" stroke="#d8ded7" stroke-width="1"/>
+<text x="700.0" y="507" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b31" text-anchor="middle">cancel_requested</text>
+<text x="700.0" y="540" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="middle">已收到取消请求</text>
+<rect x="70" y="467" width="270" height="100" rx="12" fill="#f4ddd4" stroke="#d8ded7" stroke-width="1"/>
+<text x="205.0" y="507" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b31" text-anchor="middle">failed</text>
+<text x="205.0" y="540" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="middle">失败原因可解释</text>
+<rect x="535" y="701" width="330" height="100" rx="12" fill="#e9ece7" stroke="#d8ded7" stroke-width="1"/>
+<text x="700.0" y="741" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="24" font-weight="600" fill="#172b31" text-anchor="middle">cancelled</text>
+<text x="700.0" y="774" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="middle">确认停止并记录结果</text>
+<line x1="340" y1="270" x2="527" y2="270" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="865" y1="270" x2="1052" y2="270" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="907" y="247" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#2f6659" text-anchor="start">提交成功</text>
+<line x1="700" y1="320" x2="700" y2="459" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="720" y="401" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#2f6659" text-anchor="start">请求取消</text>
+<path d="M 535 290 L 430 290 L 430 517 L 348 517" fill="none" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="375" y="407" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#9c4836" text-anchor="start">出错</text>
+<line x1="700" y1="567" x2="700" y2="693" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="720" y="636" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#2f6659" text-anchor="start">实际停止</text>
+<line x1="535" y1="542" x2="348" y2="542" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="364" y="577" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#9c4836" text-anchor="start">执行失败</text>
+<path d="M 865 517 L 1195 517 L 1195 328" fill="none" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="8 7"/>
+<text x="955" y="475" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#2f6659" text-anchor="start">若完成先于取消生效</text>
+<text x="973" y="507" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#2f6659" text-anchor="start">保留成功结果</text>
+<rect x="70" y="701" width="350" height="100" rx="12" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<text x="93" y="741" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="600" fill="#172b31" text-anchor="start">关闭面板 / 断开连接</text>
+<text x="93" y="777" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="400" fill="#596b6a" text-anchor="start">仅凭此现象无法判定任务终态</text>
+<line x1="64" y1="883" x2="1336" y2="883" stroke="#d8ded7" stroke-width="1"/>
+<text x="64" y="913" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="500" fill="#596b6a" text-anchor="start">ELEGANT VIBE CODING  /  REQUESTED ACTION / COMMITTED OUTCOME</text>
+<text x="1336" y="913" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="400" fill="#596b6a" text-anchor="end">原创教学图 · 2026</text>
+</svg>

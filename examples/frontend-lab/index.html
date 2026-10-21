@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light" data-density="comfortable">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>前端设计实验室 · Elegant Vibe Coding</title>
+  <link rel="stylesheet" href="tokens.css">
+</head>
+<body>
+  <a class="skip" href="#reading">跳到阅读内容</a>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span>ELEGANT VIBE CODING</div>
+    <nav class="toplinks" aria-label="页面导航">
+      <a href="#materials">材料目录</a><a href="#lab-controls">实验控制</a><a href="../../docs/frontend/02-design-system.md">阅读设计系统章节</a>
+    </nav>
+  </header>
+  <main class="page">
+    <div class="intro">
+      <div><p class="kicker">DESIGN LAB / 01</p><h1>让规则成为看得见的体验。</h1><p class="muted">试试主题、密度、长标题与任务状态。每一个视觉决定，都对应一个可以解释的用途。</p></div>
+      <div class="edition"><p class="kicker">INTERACTIVE EDITION</p><p class="small muted">原创教学样例 · 全部演示数据<br>离线运行 · 无外部依赖</p></div>
+    </div>
+    <div class="workspace">
+      <section class="panel materials" id="materials" aria-labelledby="materials-heading">
+        <div class="section-head"><h2 id="materials-heading">材料目录</h2><span class="small muted number" id="count">03</span></div>
+        <div class="field"><label for="filter">查找演示材料</label><input class="input" id="filter" type="search" placeholder="标题或关键词" autocomplete="off"></div>
+        <ul class="material-list" id="material-list"></ul>
+        <p class="empty muted" id="empty" hidden>当前关键词没有匹配材料。清空搜索即可查看全部。</p>
+        <p class="sr-only" id="search-status" role="status"></p>
+      </section>
+      <article class="panel article" id="reading" tabindex="-1" aria-labelledby="article-title">
+        <p class="kicker" id="article-kind">FIELD NOTE / 001</p>
+        <h2 id="article-title">证据阅读，先建立清楚的层级。</h2>
+        <div class="article-meta"><span id="article-source">原创教学材料</span><span>2026-10-21</span><span>演示内容</span></div>
+        <div class="prose"><p id="paragraph-one"></p><blockquote class="quote" id="article-quote"></blockquote><h3 id="subheading"></h3><p id="paragraph-two"></p><p id="paragraph-three"></p></div>
+        <section class="evidence" aria-labelledby="evidence-heading"><h3 id="evidence-heading">观察与验证</h3><ul id="observations"></ul></section>
+      </article>
+      <aside class="panel inspector" id="lab-controls" aria-label="设计实验控制">
+        <section class="control-block" aria-labelledby="appearance-heading">
+          <div class="section-head"><h2 id="appearance-heading">外观控制</h2><span class="kicker">01</span></div>
+          <div class="controls"><button class="button" type="button" id="theme-button" aria-pressed="false">深色主题</button><div class="field"><label for="density">界面密度</label><select id="density" class="select"><option value="comfortable">舒适 · Comfortable</option><option value="compact">紧凑 · Compact</option></select></div><button class="button" type="button" id="spec-button">查看设计说明</button></div>
+        </section>
+        <section class="control-block" aria-labelledby="task-heading">
+          <div class="section-head"><h2 id="task-heading">任务状态</h2><span class="kicker">02</span></div>
+          <span class="state-label"><span class="state-dot" aria-hidden="true"></span><span id="state-name">准备就绪</span></span>
+          <p class="task-status small" id="task-status" role="status" aria-atomic="true">这是本地状态演示。开始后可体验成功、取消或失败。</p>
+          <label class="sr-only" for="task-progress">演示任务进度</label><progress id="task-progress" class="task-progress" max="5" value="0"></progress>
+          <div class="task-actions"><button class="button button--primary" type="button" id="start">运行演示</button><div class="task-secondary"><button class="button" type="button" id="cancel" disabled>取消演示</button><button class="button button--danger" type="button" id="fail" disabled>模拟失败</button></div></div>
+        </section>
+        <section class="control-block" aria-labelledby="tokens-heading">
+          <div class="section-head"><h2 id="tokens-heading">当前规则</h2><span class="kicker">03</span></div>
+          <div class="token-pair"><span>正文色</span><span class="token-value" id="text-token">#202a29</span></div><div class="token-pair"><span>强调色</span><span class="token-value" id="accent-token">#25624e</span></div><div class="token-pair"><span>控件最小高度</span><span class="token-value" id="height-token">40px</span></div>
+          <div class="swatches" aria-hidden="true"><span class="swatch" style="background:var(--canvas)"></span><span class="swatch" style="background:var(--surface)"></span><span class="swatch" style="background:var(--text-primary)"></span><span class="swatch" style="background:var(--accent)"></span></div>
+          <p class="small muted" style="margin-top:.75rem">颜色按用途命名。主题变化时，组件继续使用相同语义。</p>
+        </section>
+      </aside>
+    </div>
+    <section class="footnotes" aria-label="设计观察提示">
+      <div class="footnote"><p class="kicker">01 / HIERARCHY</p><h3>先看内容，再看工具</h3><p class="small muted">标题、正文与元数据各有层级。分隔线组织内容，强调色标记当前动作。</p></div>
+      <div class="footnote"><p class="kicker">02 / STATES</p><h3>每一种等待都有说法</h3><p class="small muted">演示任务有真实本地阶段；取消经历请求与确认，失败后保留进度。</p></div>
+      <div class="footnote"><p class="kicker">03 / ACCESS</p><h3>试着只用键盘完成</h3><p class="small muted">使用 Tab 切换控件，Enter 激活按钮；打开说明后用 Escape 关闭。</p></div>
+    </section>
+  </main>
+  <dialog class="modal" id="spec-dialog" aria-labelledby="spec-title">
+    <h2 id="spec-title" tabindex="-1">为什么这样设计？</h2>
+    <p>这份教学界面采用“目录—阅读—检查器”结构：目录支持扫描，中心面支持持续阅读，右侧集中展示设置、任务状态与当前设计规则。</p>
+    <ul><li>字体、颜色和间距按语义复用；深浅主题与密度分别控制。</li><li>列表用真实按钮选择材料，选中与键盘焦点分别表达。</li><li>任务进度来自本地演示计数；取消确认和失败都有明确文案。</li><li>窄屏改成单列；长标题自然换行；减少动态效果偏好下保留静态反馈。</li></ul>
+    <p>这是通用原创教学样例，适合观察规则与状态。正式产品应遵循已有品牌、组件、真实数据契约，并在目标浏览器、WebView 与辅助技术中验证。</p>
+    <form method="dialog"><button class="button button--primary" value="close">关闭说明</button></form>
+  </dialog>
+  <script>
+    'use strict';
+    const materials = [
+      { id: '001', title: '证据阅读，先建立清楚的层级。', kind: '阅读与层级', words: '演示材料 01',
+        first: '一个阅读界面首先帮助用户知道：正在看哪一份材料，哪些段落需要注意，来源与解释放在哪里。标题、正文和元数据的层级，决定这些问题能否迅速得到回答。',
+        quote: '每一个强调，都应该对应一个值得注意的理由。',
+        heading: '把空间分配给关系',
+        second: '同一段解释中的信息可以靠近；不同任务区之间保留更多空间。较轻的分隔线用于组织内容，清晰的选中样式用于定位当前对象，主要操作使用更强的颜色。',
+        third: '右侧的颜色和密度控制彼此独立。切换主题时，文字和背景按语义重新配对；切换密度时，列表和控件的留白变化，正文仍保持适合阅读的节奏。',
+        observations: ['将主题切换到深色，观察正文和辅助信息是否仍有层次。', '切换紧凑密度，比较条目间距与正文行高的不同处理。', '使用 Tab 查看焦点环，再点击其他材料观察持久选中态。'] },
+      { id: '002', title: '当材料标题很长：中英混排、文件路径与多层说明如何共同保持可读性', kind: '长内容与重排', words: '演示材料 02',
+        first: '真实材料的名称经常比设计稿里的示例长。可能包含文档名称、年份、英文缩写，以及版本说明。界面需要让这些内容在不同宽度下保持可读，也要保留状态与操作的空间。',
+        quote: '用真实长度检查布局，比缩短示例更有价值。',
+        heading: '让内容决定必要的高度',
+        second: '这份示例让长标题自然换行，而辅助信息位于独立行。窗口变窄时，目录、阅读面和控制区改成单列；阅读区域保留完整内容与清楚的标题结构。',
+        third: '极端样例路径：demo-library/handbooks/coffee-brewing-and-kitchen-equipment/maintenance-instructions/reading-notes.md。长连续字符通过换行规则适应当前宽度。该路径仅为虚构演示。',
+        observations: ['把窗口缩窄到约 320 CSS px，检查页面是否出现意外横向溢出。', '放大页面文字，检查按钮标签与说明是否完整。', '用较长关键词过滤，再清空搜索，观察当前材料是否保持。'] },
+      { id: '003', title: '从“处理中”到可恢复的任务状态', kind: '异步状态与反馈', words: '演示材料 03',
+        first: '一次长任务会经历接收、执行、完成或失败。用户还可能请求停止。把这些情况说清楚，有助于判断该等待、重试、阅读部分结果，还是继续其他工作。',
+        quote: '反馈的准确性，来自真实状态与界面文案的一致。',
+        heading: '把请求与最终确认分开',
+        second: '点击右侧“运行演示”会开始一个纯本地计数任务。每完成一个阶段，进度随之变化。点击“取消演示”后先显示正在取消，再显示本地停止确认；点击“模拟失败”会保存已完成的演示进度。',
+        third: '真实产品还需要服务端运行标识、幂等、恢复和持久化等能力。这里专门展示前端状态语言：每次进度和终态都有明确来源，所有数据均为演示，不向任何服务发送请求。',
+        observations: ['先完整运行一次，再分别体验取消和模拟失败。', '观察取消请求与取消确认之间的文案区别。', '检查状态区可被辅助技术识别，且没有主动抢走键盘焦点。'] }
+    ];
+    const $ = (id) => document.getElementById(id);
+    const root = document.documentElement;
+    let selectedId = materials[0].id;
+    let taskState = 'ready';
+    let done = 0;
+    let timer = null;
+    let cancelTimer = null;
+
+    function renderMaterials() {
+      const query = $('filter').value.trim().toLocaleLowerCase();
+      const shown = materials.filter((item) => (item.title + item.kind).toLocaleLowerCase().includes(query));
+      $('material-list').replaceChildren();
+      for (const item of shown) {
+        const li = document.createElement('li');
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'material-button';
+        button.setAttribute('aria-pressed', String(item.id === selectedId));
+        button.dataset.id = item.id;
+        const title = document.createElement('span');
+        title.className = 'material-title';
+        title.textContent = item.title;
+        const meta = document.createElement('span');
+        meta.className = 'material-meta';
+        const kind = document.createElement('span'); kind.textContent = item.kind;
+        const id = document.createElement('span'); id.className = 'number'; id.textContent = item.id;
+        meta.append(kind, id);
+        button.append(title, meta);
+        button.addEventListener('click', () => selectMaterial(item.id));
+        li.append(button); $('material-list').append(li);
+      }
+      $('count').textContent = String(shown.length).padStart(2, '0');
+      $('empty').hidden = shown.length !== 0;
+      $('search-status').textContent = `找到 ${shown.length} 份演示材料`;
+    }
+
+    function selectMaterial(id) {
+      selectedId = id;
+      const item = materials.find((entry) => entry.id === id);
+      $('article-kind').textContent = `FIELD NOTE / ${item.id}`;
+      $('article-title').textContent = item.title;
+      $('article-source').textContent = item.words;
+      $('paragraph-one').textContent = item.first;
+      $('article-quote').textContent = item.quote;
+      $('subheading').textContent = item.heading;
+      $('paragraph-two').textContent = item.second;
+      $('paragraph-three').textContent = item.third;
+      $('observations').replaceChildren();
+      for (const value of item.observations) { const li = document.createElement('li'); li.textContent = value; $('observations').append(li); }
+      document.querySelectorAll('.material-button').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.id === id)));
+    }
+
+    function updateTokens() {
+      const style = getComputedStyle(root);
+      $('text-token').textContent = style.getPropertyValue('--text-primary').trim();
+      $('accent-token').textContent = style.getPropertyValue('--accent').trim();
+      $('height-token').textContent = `${parseFloat(style.getPropertyValue('--control-height')) * parseFloat(style.fontSize)}px`;
+    }
+
+    function setState(state, message) {
+      taskState = state;
+      const names = {ready: '准备就绪', running: '演示运行中', cancelling: '正在取消', cancelled: '演示已取消', success: '演示已完成', error: '演示失败'};
+      $('state-name').textContent = names[state];
+      $('task-status').textContent = message;
+      $('start').disabled = state === 'running' || state === 'cancelling';
+      $('cancel').disabled = state !== 'running';
+      $('fail').disabled = state !== 'running';
+      $('task-progress').value = done;
+    }
+
+    $('theme-button').addEventListener('click', () => {
+      const dark = root.dataset.theme !== 'dark';
+      root.dataset.theme = dark ? 'dark' : 'light';
+      $('theme-button').setAttribute('aria-pressed', String(dark));
+      updateTokens();
+    });
+    $('density').addEventListener('change', (event) => { root.dataset.density = event.target.value; updateTokens(); });
+    $('filter').addEventListener('input', renderMaterials);
+    $('spec-button').addEventListener('click', () => { $('spec-dialog').showModal(); $('spec-title').focus(); });
+    $('spec-dialog').addEventListener('close', () => $('spec-button').focus());
+
+    $('start').addEventListener('click', () => {
+      clearInterval(timer); clearTimeout(cancelTimer); done = 0;
+      setState('running', '演示任务已接收，正在处理第 1 / 5 个本地阶段。');
+      timer = setInterval(() => {
+        if (taskState !== 'running') return;
+        done += 1;
+        if (done === 5) { clearInterval(timer); setState('success', '演示任务完成：5 / 5 个本地阶段已处理。可以重新体验取消或失败。'); }
+        else { setState('running', `已完成 ${done} / 5 个本地阶段，正在继续演示。`); }
+      }, 850);
+    });
+    $('cancel').addEventListener('click', () => {
+      if (taskState !== 'running') return;
+      clearInterval(timer);
+      setState('cancelling', `已请求取消演示，正在等待本地确认。当前完成 ${done} / 5。`);
+      cancelTimer = setTimeout(() => setState('cancelled', `本地停止已确认，保留 ${done} / 5 的演示进度。可重新开始。`), 500);
+    });
+    $('fail').addEventListener('click', () => {
+      if (taskState !== 'running') return;
+      clearInterval(timer);
+      setState('error', `已模拟连接失败，保留 ${done} / 5 的演示进度。此处没有真实网络请求，可重新开始。`);
+    });
+    renderMaterials(); selectMaterial(selectedId); updateTokens();
+  </script>
+</body>
+</html>

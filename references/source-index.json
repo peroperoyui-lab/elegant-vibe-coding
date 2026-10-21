@@ -1,0 +1,806 @@
+{
+  "note": "Chapter citation inventory; access date records this edition, not a promise of future availability.",
+  "sources": [
+    {
+      "url": "https://agents.md/",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://atlassian.design/tokens/design-tokens/",
+      "chapters": [
+        "docs/frontend/01-visual-language.md",
+        "docs/frontend/02-design-system.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://awesome-copilot.github.com/",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html",
+      "chapters": [
+        "docs/backend/04-agent-runtime-review.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "chapters": [
+        "docs/backend/01-backend-map.md",
+        "docs/backend/02-review-in-30-minutes.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+      "chapters": [
+        "docs/backend/01-backend-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+      "chapters": [
+        "docs/backend/04-agent-runtime-review.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+      "chapters": [
+        "docs/backend/01-backend-map.md",
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/best-practices",
+      "chapters": [
+        "docs/workflow/01-agentic-workflow.md",
+        "docs/workflow/02-prompt-recipes.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/commands",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://code.claude.com/docs/en/memory",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://community.owasp.org/attacks/Path_Traversal",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://cursor.com/docs/rules",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+      "chapters": [
+        "docs/cases/02-feature-walkthrough.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties",
+      "chapters": [
+        "docs/frontend/02-design-system.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Containment/Container_queries",
+      "chapters": [
+        "docs/frontend/01-visual-language.md",
+        "docs/frontend/02-design-system.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/%40media/prefers-reduced-motion",
+      "chapters": [
+        "docs/frontend/01-visual-language.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length",
+      "chapters": [
+        "docs/frontend/01-visual-language.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "chapters": [
+        "docs/workflow/01-agentic-workflow.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developers.openai.com/codex/agent-configuration/agents-md",
+      "chapters": [
+        "docs/workflow/01-agentic-workflow.md",
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developers.openai.com/codex/developer-commands",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developers.openai.com/codex/non-interactive-mode",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://developers.openai.com/cookbook/examples/codex/iterating-development-workflows-with-codex",
+      "chapters": [
+        "docs/workflow/02-prompt-recipes.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/concepts/prompting-and-context/custom-instructions",
+      "chapters": [
+        "docs/workflow/02-prompt-recipes.md",
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://docs.npmjs.com/cli/v11/commands/npm-ci/",
+      "chapters": [
+        "docs/backend/03-data-async-security.md",
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://docs.npmjs.com/cli/v11/commands/npm-pkg/",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://docs.npmjs.com/cli/v11/commands/npm-run/",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://docs.python.org/3/library/sqlite3.html",
+      "chapters": [
+        "docs/backend/02-review-in-30-minutes.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://docs.python.org/3/library/unittest.html",
+      "chapters": [
+        "docs/backend/02-review-in-30-minutes.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/",
+      "chapters": [
+        "docs/backend/04-agent-runtime-review.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-branch",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-diff",
+      "chapters": [
+        "docs/backend/02-review-in-30-minutes.md",
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-log",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-reflog",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-revert",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-status",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-switch",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://git-scm.com/docs/git-worktree",
+      "chapters": [
+        "docs/workflow/01-agentic-workflow.md",
+        "docs/workflow/03-tools-and-commands.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "chapters": [
+        "docs/workflow/03-tools-and-commands.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/EnzeD/vibe-coding",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "chapters": [
+        "docs/workflow/01-agentic-workflow.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/Fission-AI/OpenSpec/blob/main/docs/getting-started.md",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/PatrickJS/awesome-cursorrules",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/agentsmd/agents.md",
+      "chapters": [
+        "docs/workflow/01-agentic-workflow.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/anthropics/skills",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/coleam00/context-engineering-intro",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/datawhalechina/easy-vibe",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/filipecalegario/awesome-vibe-coding",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/github/awesome-copilot",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/github/spec-kit",
+      "chapters": [
+        "docs/workflow/01-agentic-workflow.md",
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.com/obra/superpowers",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://github.github.com/spec-kit/",
+      "chapters": [
+        "docs/workflow/04-reading-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://json-schema.org/understanding-json-schema/reference/object",
+      "chapters": [
+        "docs/backend/04-agent-runtime-review.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/server/tools",
+      "chapters": [
+        "docs/backend/04-agent-runtime-review.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://nodejs.org/api/child_process.html",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://nodejs.org/api/fs.html",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://nodejs.org/api/globals.html#class-abortcontroller",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://nodejs.org/api/test.html",
+      "chapters": [
+        "docs/backend/02-review-in-30-minutes.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://opentelemetry.io/docs/concepts/signals/",
+      "chapters": [
+        "docs/backend/01-backend-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://playwright.dev/docs/accessibility-testing",
+      "chapters": [
+        "docs/frontend/04-design-critique.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://playwright.dev/docs/test-snapshots",
+      "chapters": [
+        "docs/frontend/04-design-critique.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/backup.html",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/lang_altertable.html",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/lang_createindex.html",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/lang_transaction.html",
+      "chapters": [
+        "docs/backend/01-backend-map.md",
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/lang_update.html",
+      "chapters": [
+        "docs/backend/02-review-in-30-minutes.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/pragma.html",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/pragma.html#pragma_foreign_keys",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/pragma.html#pragma_integrity_check",
+      "chapters": [
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://sqlite.org/wal.html",
+      "chapters": [
+        "docs/backend/01-backend-map.md",
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://v2.tauri.app/concept/architecture/",
+      "chapters": [
+        "docs/cases/01-notes-app.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://v2.tauri.app/security/capabilities/",
+      "chapters": [
+        "docs/backend/01-backend-map.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://web.dev/articles/vitals",
+      "chapters": [
+        "docs/frontend/04-design-critique.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.anthropic.com/research/effective-harnesses-for-long-running-agents",
+      "chapters": [
+        "docs/cases/01-notes-app.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.carbondesignsystem.com/building-blocks/foundations/spacing/overview",
+      "chapters": [
+        "docs/frontend/01-visual-language.md",
+        "docs/frontend/02-design-system.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.carbondesignsystem.com/building-blocks/foundations/typography/type-sets",
+      "chapters": [
+        "docs/frontend/01-visual-language.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "chapters": [
+        "docs/backend/01-backend-map.md",
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2",
+      "chapters": [
+        "docs/backend/01-backend-map.md",
+        "docs/backend/03-data-async-security.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_transaction.html",
+      "chapters": [
+        "docs/cases/02-feature-walkthrough.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/TR/prov-dm/",
+      "chapters": [
+        "docs/backend/04-agent-runtime-review.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/TR/prov-overview/",
+      "chapters": [
+        "docs/backend/04-agent-runtime-review.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html",
+      "chapters": [
+        "docs/frontend/02-design-system.md",
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "chapters": [
+        "docs/cases/02-feature-walkthrough.md",
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html",
+      "chapters": [
+        "docs/frontend/03-interaction-accessibility.md"
+      ],
+      "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.w3.org/WAI/test-evaluate/tools/",
+      "chapters": [
+        "docs/frontend/04-design-critique.md"
+      ],
+      "accessed_on": "2026-10-21"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1030" viewBox="0 0 1600 1030" role="img" aria-labelledby="title desc">
+<title id="title">资料管理工作台布局解剖</title><desc id="desc">教学界面示意：左侧导航、中间资料与工作内容、右侧来源详情；紧凑列表与舒适阅读密度分开。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6d837a"/></marker></defs>
+<rect x="0" y="0" width="1600" height="1030" rx="0" fill="#f5f3ec"/>
+<text x="64" y="53" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="700" fill="#2f6659" text-anchor="start">02 / WORKSPACE ANATOMY</text>
+<text x="64" y="110" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="39" font-weight="700" fill="#172b31" text-anchor="start">让布局回答：去哪里、做什么、来自哪里</text>
+<text x="64" y="151" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="400" fill="#596b6a" text-anchor="start">示例配色与尺寸是教学建议；真实产品沿用其现行设计系统。</text>
+<rect x="65" y="203" width="1470" height="618" rx="16" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<rect x="65" y="203" width="1470" height="58" rx="16" fill="#172b31"/>
+<rect x="65" y="233" width="1470" height="28" rx="0" fill="#172b31"/>
+<text x="90" y="241" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="700" fill="#f5f3ec" text-anchor="start">DOCUMENT DESK</text>
+<text x="363" y="240" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#cbd8d2" text-anchor="start">收藏夹 / 使用手册</text>
+<rect x="1288" y="216" width="218" height="31" rx="6" fill="#344c4d"/>
+<text x="1308" y="238" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="400" fill="#f5f3ec" text-anchor="start">搜索项目…    Ctrl K</text>
+<rect x="66" y="262" width="230" height="558" rx="0" fill="#ecefe7"/>
+<text x="90" y="301" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="600" fill="#596b6a" text-anchor="start">工作空间</text>
+<circle cx="100" cy="340" r="6" fill="#8d9c95"/>
+<text x="121" y="347" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#172b31" text-anchor="start">项目概览</text>
+<rect x="79" y="378" width="201" height="43" rx="7" fill="#d5e7c1"/>
+<circle cx="100" cy="398" r="6" fill="#2f6659"/>
+<text x="121" y="405" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="600" fill="#2f6659" text-anchor="start">资料与证据</text>
+<circle cx="100" cy="456" r="6" fill="#8d9c95"/>
+<text x="121" y="463" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#172b31" text-anchor="start">工作笔记</text>
+<circle cx="100" cy="514" r="6" fill="#8d9c95"/>
+<text x="121" y="521" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#172b31" text-anchor="start">任务与结果</text>
+<circle cx="100" cy="572" r="6" fill="#8d9c95"/>
+<text x="121" y="579" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#172b31" text-anchor="start">设置</text>
+<text x="90" y="781" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="14" font-weight="400" fill="#596b6a" text-anchor="start">本地项目 · 教学示例</text>
+<line x1="296" y1="262" x2="296" y2="819" stroke="#d8ded7" stroke-width="1"/>
+<text x="327" y="309" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="28" font-weight="700" fill="#172b31" text-anchor="start">资料与证据</text>
+<text x="327" y="343" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">按工作主题整理材料，随时回到原文。</text>
+<rect x="965" y="282" width="166" height="42" rx="7" fill="#2f6659"/>
+<text x="1048" y="310" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="600" fill="#ffffff" text-anchor="middle">＋ 导入资料</text>
+<rect x="327" y="366" width="803" height="43" rx="7" fill="#f5f7f2" stroke="#d8ded7" stroke-width="1"/>
+<text x="347" y="394" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">搜索标题、作者或标签…</text>
+<text x="327" y="441" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="700" fill="#2f6659" text-anchor="start">全部资料</text>
+<text x="443" y="441" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">待阅读</text>
+<text x="537" y="441" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">已标注</text>
+<line x1="327" y1="454" x2="1130" y2="454" stroke="#d8ded7" stroke-width="1"/>
+<rect x="317" y="467" width="823" height="69" rx="8" fill="#eff5e8"/>
+<rect x="336" y="481" width="26" height="32" rx="3" fill="#e2e9de"/>
+<text x="380" y="498" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="600" fill="#172b31" text-anchor="start">家用咖啡器具使用手册</text>
+<text x="380" y="523" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="14" font-weight="400" fill="#596b6a" text-anchor="start">参考文档 · 2024</text>
+<text x="1050" y="501" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="500" fill="#2f6659" text-anchor="middle">已就绪</text>
+<line x1="327" y1="538" x2="1130" y2="538" stroke="#e9ede5" stroke-width="1"/>
+<rect x="336" y="556" width="26" height="32" rx="3" fill="#e2e9de"/>
+<text x="380" y="573" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#172b31" text-anchor="start">室内植物养护指南</text>
+<text x="380" y="598" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="14" font-weight="400" fill="#596b6a" text-anchor="start">使用指南 · 2025</text>
+<text x="1050" y="576" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="500" fill="#2f6659" text-anchor="middle">处理中</text>
+<line x1="327" y1="613" x2="1130" y2="613" stroke="#e9ede5" stroke-width="1"/>
+<rect x="336" y="631" width="26" height="32" rx="3" fill="#e2e9de"/>
+<text x="380" y="648" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#172b31" text-anchor="start">文档分类与整理说明</text>
+<text x="380" y="673" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="14" font-weight="400" fill="#596b6a" text-anchor="start">工作笔记 · 今天</text>
+<text x="1050" y="651" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="500" fill="#2f6659" text-anchor="middle">已就绪</text>
+<line x1="327" y1="688" x2="1130" y2="688" stroke="#e9ede5" stroke-width="1"/>
+<rect x="336" y="706" width="26" height="32" rx="3" fill="#e2e9de"/>
+<text x="380" y="723" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#172b31" text-anchor="start">Camera setup and maintenance</text>
+<text x="380" y="748" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="14" font-weight="400" fill="#596b6a" text-anchor="start">参考文档 · 2023</text>
+<text x="1050" y="726" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="500" fill="#9c4836" text-anchor="middle">需重试</text>
+<line x1="327" y1="763" x2="1130" y2="763" stroke="#e9ede5" stroke-width="1"/>
+<line x1="1160" y1="262" x2="1160" y2="819" stroke="#d8ded7" stroke-width="1"/>
+<text x="1187" y="307" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="700" fill="#172b31" text-anchor="start">来源详情</text>
+<text x="1187" y="352" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="19" font-weight="600" fill="#172b31" text-anchor="start">家用咖啡器具使用手册</text>
+<text x="1187" y="390" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="14" font-weight="400" fill="#596b6a" text-anchor="start">材料类型</text>
+<text x="1187" y="418" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">参考文档 · 教学数据</text>
+<text x="1187" y="463" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="14" font-weight="400" fill="#596b6a" text-anchor="start">定位</text>
+<text x="1187" y="491" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">第 3 节 / 操作说明</text>
+<rect x="1187" y="521" width="320" height="122" rx="8" fill="#f6f6ef"/>
+<text x="1205" y="552" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">“清洁前断开电源…</text>
+<text x="1205" y="582" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">依次清洗可拆卸部件，</text>
+<text x="1205" y="612" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">晾干后再重新安装。”</text>
+<rect x="1187" y="673" width="320" height="43" rx="7" fill="#ffffff" stroke="#2f6659" stroke-width="1"/>
+<text x="1347" y="702" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="600" fill="#2f6659" text-anchor="middle">打开原文</text>
+<circle cx="62" cy="874" r="17" fill="#c7ef81"/>
+<text x="62" y="880" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="700" fill="#172b31" text-anchor="middle">1</text>
+<text x="90" y="881" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="600" fill="#172b31" text-anchor="start">稳定导航</text>
+<text x="62" y="919" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">位置与对象始终可识别</text>
+<circle cx="602" cy="874" r="17" fill="#c7ef81"/>
+<text x="602" y="880" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="700" fill="#172b31" text-anchor="middle">2</text>
+<text x="630" y="881" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="600" fill="#172b31" text-anchor="start">主任务区域</text>
+<text x="602" y="919" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">高密度扫描，清晰主动作</text>
+<circle cx="1227" cy="874" r="17" fill="#c7ef81"/>
+<text x="1227" y="880" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="700" fill="#172b31" text-anchor="middle">3</text>
+<text x="1255" y="881" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="600" fill="#172b31" text-anchor="start">上下文详情</text>
+<text x="1227" y="919" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">按需解释，返回路径清楚</text>
+<line x1="64" y1="973" x2="1536" y2="973" stroke="#d8ded7" stroke-width="1"/>
+<text x="64" y="1003" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="500" fill="#596b6a" text-anchor="start">ELEGANT VIBE CODING  /  NAVIGATION / WORK / CONTEXT</text>
+<text x="1536" y="1003" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="400" fill="#596b6a" text-anchor="end">原创教学图 · 2026</text>
+</svg>

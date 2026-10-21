@@ -1,0 +1,35 @@
+{
+  "renderer": "mermaid 11.12.2",
+  "diagrams": [
+    {
+      "chapter": "docs/backend/01-backend-map.md",
+      "index": 1,
+      "hash": "87f9d2737a8eeec7",
+      "svg": "assets/diagrams/87f9d2737a8eeec7.svg"
+    },
+    {
+      "chapter": "docs/backend/03-data-async-security.md",
+      "index": 1,
+      "hash": "dd96f3b83086a639",
+      "svg": "assets/diagrams/dd96f3b83086a639.svg"
+    },
+    {
+      "chapter": "docs/backend/04-agent-runtime-review.md",
+      "index": 1,
+      "hash": "e4bb8de5fd507ec0",
+      "svg": "assets/diagrams/e4bb8de5fd507ec0.svg"
+    },
+    {
+      "chapter": "docs/frontend/02-design-system.md",
+      "index": 1,
+      "hash": "10e3044a926323d5",
+      "svg": "assets/diagrams/10e3044a926323d5.svg"
+    },
+    {
+      "chapter": "docs/frontend/03-interaction-accessibility.md",
+      "index": 1,
+      "hash": "ee989b46373f0a60",
+      "svg": "assets/diagrams/ee989b46373f0a60.svg"
+    }
+  ]
+}

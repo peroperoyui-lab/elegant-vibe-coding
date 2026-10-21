@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 1400 840" role="img" aria-labelledby="title desc">
+<title id="title">设计token从原始值到语义和组件</title><desc id="desc">原始颜色与间距通过语义token映射到组件。主题切换改变语义映射，组件仍使用语义名。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6d837a"/></marker></defs>
+<rect x="0" y="0" width="1400" height="840" rx="0" fill="#f5f3ec"/>
+<text x="64" y="53" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="700" fill="#2f6659" text-anchor="start">06 / DESIGN TOKENS</text>
+<text x="64" y="110" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="39" font-weight="700" fill="#172b31" text-anchor="start">用语义连接视觉意图与组件实现</text>
+<text x="64" y="151" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="400" fill="#596b6a" text-anchor="start">示例数值是教学选择；颜色对比需按实际前景、背景与状态测量。</text>
+<text x="70" y="218" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#172b31" text-anchor="start">原始值 / Primitive</text>
+<text x="70" y="253" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">颜色、间距、圆角的素材</text>
+<text x="535" y="218" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#172b31" text-anchor="start">语义 / Semantic</text>
+<text x="535" y="253" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">明确用途，而非外观名称</text>
+<text x="1000" y="218" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#172b31" text-anchor="start">组件 / Component</text>
+<text x="1000" y="253" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">组合成可用的交互状态</text>
+<rect x="70" y="285" width="330" height="325" rx="13" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<rect x="94" y="311" width="34" height="34" rx="6" fill="#172b31" stroke="#d8ded7" stroke-width="1"/>
+<text x="145" y="335" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">ink-950   #172b31</text>
+<rect x="94" y="369" width="34" height="34" rx="6" fill="#2f6659" stroke="#d8ded7" stroke-width="1"/>
+<text x="145" y="393" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">green-700   #2f6659</text>
+<rect x="94" y="427" width="34" height="34" rx="6" fill="#c7ef81" stroke="#d8ded7" stroke-width="1"/>
+<text x="145" y="451" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">lime-200   #c7ef81</text>
+<rect x="94" y="485" width="34" height="34" rx="6" fill="#f5f3ec" stroke="#d8ded7" stroke-width="1"/>
+<text x="145" y="509" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#172b31" text-anchor="start">paper-50   #f5f3ec</text>
+<text x="94" y="581" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#596b6a" text-anchor="start">space: 4 / 8 / 12 / 16 / 24</text>
+<rect x="535" y="285" width="330" height="325" rx="13" fill="#172b31"/>
+<text x="565" y="336" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="500" fill="#f5f3ec" text-anchor="start">text.primary</text>
+<text x="565" y="391" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="500" fill="#f5f3ec" text-anchor="start">surface.canvas</text>
+<text x="565" y="446" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="500" fill="#c7ef81" text-anchor="start">action.primary</text>
+<text x="565" y="501" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="500" fill="#f5f3ec" text-anchor="start">border.subtle</text>
+<text x="565" y="556" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="21" font-weight="500" fill="#f5f3ec" text-anchor="start">space.control-gap</text>
+<rect x="1000" y="285" width="330" height="325" rx="13" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<rect x="1030" y="319" width="270" height="52" rx="8" fill="#2f6659"/>
+<text x="1165" y="353" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">保存结果</text>
+<rect x="1030" y="397" width="270" height="52" rx="8" fill="#ffffff" stroke="#2f6659" stroke-width="1"/>
+<rect x="1024" y="391" width="282" height="64" rx="12" fill="none" stroke="#2f6659" stroke-width="2"/>
+<text x="1165" y="431" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="600" fill="#2f6659" text-anchor="middle">键盘焦点</text>
+<text x="1030" y="513" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">default / hover / focus</text>
+<text x="1030" y="548" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#596b6a" text-anchor="start">disabled / loading</text>
+<text x="1030" y="583" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#2f6659" text-anchor="start">状态与主题一起验证</text>
+<line x1="400" y1="445" x2="527" y2="445" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="865" y1="445" x2="992" y2="445" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="662" width="1260" height="70" rx="10" fill="#e6eddd"/>
+<text x="700" y="706" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="500" fill="#172b31" text-anchor="middle">主题切换：调整语义映射；组件保持同一套使用方式。</text>
+<line x1="64" y1="783" x2="1336" y2="783" stroke="#d8ded7" stroke-width="1"/>
+<text x="64" y="813" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="500" fill="#596b6a" text-anchor="start">ELEGANT VIBE CODING  /  PRIMITIVE → SEMANTIC → COMPONENT</text>
+<text x="1336" y="813" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="400" fill="#596b6a" text-anchor="end">原创教学图 · 2026</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="930" viewBox="0 0 1400 930" role="img" aria-labelledby="title desc">
+<title id="title">沿一条请求审查后端</title><desc id="desc">入口接收请求，应用服务处理规则与状态，再分别访问存储和外部依赖；结果和诊断回到界面。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6d837a"/></marker></defs>
+<rect x="0" y="0" width="1400" height="930" rx="0" fill="#f5f3ec"/>
+<text x="64" y="53" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="16" font-weight="700" fill="#2f6659" text-anchor="start">04 / BACKEND REVIEW</text>
+<text x="64" y="110" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="39" font-weight="700" fill="#172b31" text-anchor="start">沿一条请求，找事实与副作用</text>
+<text x="64" y="151" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="20" font-weight="400" fill="#596b6a" text-anchor="start">每个问题写清：位置、触发条件、后果、证据、最小修复。</text>
+<rect x="80" y="216" width="340" height="130" rx="14" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<text x="103" y="263" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#172b31" text-anchor="start">01  入口 / API · IPC</text>
+<text x="103" y="301" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#596b6a" text-anchor="start">输入 · 契约 · 错误语义</text>
+<rect x="530" y="216" width="340" height="130" rx="14" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<text x="553" y="263" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#172b31" text-anchor="start">02  应用服务</text>
+<text x="553" y="301" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#596b6a" text-anchor="start">业务规则 · 任务状态</text>
+<rect x="980" y="216" width="340" height="130" rx="14" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<text x="1003" y="263" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#172b31" text-anchor="start">03  结果与反馈</text>
+<text x="1003" y="301" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#596b6a" text-anchor="start">返回值 · 真实终态 · 下一步</text>
+<rect x="350" y="491" width="340" height="153" rx="14" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<text x="373" y="538" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#172b31" text-anchor="start">04  持久化</text>
+<text x="373" y="576" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#596b6a" text-anchor="start">数据库 · 文件 · 迁移</text>
+<rect x="800" y="491" width="340" height="153" rx="14" fill="#ffffff" stroke="#d8ded7" stroke-width="1"/>
+<text x="823" y="538" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#172b31" text-anchor="start">05  外部依赖</text>
+<text x="823" y="576" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#596b6a" text-anchor="start">模型 · 网络 · 解析器</text>
+<line x1="420" y1="279" x2="523" y2="279" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="870" y1="279" x2="973" y2="279" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 630 346 L 630 413 L 520 413 L 520 483" fill="none" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 770 346 L 770 413 L 970 413 L 970 483" fill="none" stroke="#6d837a" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="470" y="393" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#2f6659" text-anchor="start">写入何时完成？</text>
+<text x="890" y="393" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#2f6659" text-anchor="start">失败怎样恢复？</text>
+<text x="374" y="615" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#2f6659" text-anchor="start">事务边界 · 重复写入 · 重开</text>
+<text x="824" y="615" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="17" font-weight="400" fill="#2f6659" text-anchor="start">超时 · 重试 · 取消 · 预算</text>
+<rect x="80" y="704" width="1240" height="101" rx="12" fill="#172b31"/>
+<text x="110" y="745" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="600" fill="#c7ef81" text-anchor="start">审查证据</text>
+<text x="300" y="745" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="23" font-weight="500" fill="#f5f3ec" text-anchor="start">可复现输入  +  状态变化  +  持久结果  +  运行记录</text>
+<text x="300" y="779" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" font-weight="400" fill="#cbd8d2" text-anchor="start">把已确认缺陷、待验证疑点与维护建议分别表达。</text>
+<line x1="64" y1="873" x2="1336" y2="873" stroke="#d8ded7" stroke-width="1"/>
+<text x="64" y="903" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="500" fill="#596b6a" text-anchor="start">ELEGANT VIBE CODING  /  TRACE THE REQUEST / EXPLAIN THE FAILURE</text>
+<text x="1336" y="903" font-family="Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="15" font-weight="400" fill="#596b6a" text-anchor="end">原创教学图 · 2026</text>
+</svg>
