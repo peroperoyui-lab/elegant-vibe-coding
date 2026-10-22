@@ -73,10 +73,16 @@ try {
     assert.equal(await page.locator('#search-dialog').evaluate(el=>el.open),true);
     await page.keyboard.press('Escape');
     assert.equal(await page.locator('#search-dialog').evaluate(el=>el.open),false);
-    await page.evaluate(() => window.scrollTo(0,0));
-    await page.screenshot({path:path.join(qa,`questioning-${viewport.width}.png`),fullPage:false});
+    // Capture a settled reading state, not a sidebar transition or copy toast.
+    if(viewport.width<800) {
+      await page.waitForFunction(() => document.getElementById('sidebar').getBoundingClientRect().right<=0.5);
+      assert.equal(await page.locator('#sidebar').evaluate(el=>el.inert),true);
+    }
+    await page.waitForFunction(() => !document.getElementById('toast').classList.contains('show'));
+    await page.evaluate(() => {document.activeElement?.blur();window.scrollTo(0,0);});
+    await page.screenshot({path:path.join(qa,`questioning-${viewport.width}.png`),fullPage:false,animations:'disabled'});
     assert.deepEqual(errors,[],`Browser errors at ${viewport.width}px`);
-    results.push({viewport,documents:added.length,checks:['source parity','chapter rendering','global overflow','full-text search','method anchor','copy handler (stubbed clipboard)','theme toggle','keyboard search and escape',...(viewport.width<800?['mobile navigation']:[])],passed:true});
+    results.push({viewport,documents:added.length,checks:['source parity','chapter rendering','global overflow','full-text search','method anchor','copy handler (stubbed clipboard)','theme toggle','keyboard search and escape',...(viewport.width<800?['mobile navigation','closed sidebar fully offscreen and inert']:[])],passed:true});
     await context.close();
   }
   const report={source_commit:process.env.GITHUB_SHA||null,node:process.version,chromium:browser.version(),platform:process.platform,network:'offline',results};
