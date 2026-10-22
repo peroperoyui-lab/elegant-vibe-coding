@@ -1,5 +1,5 @@
 {
-  "note": "Chapter citation inventory; access date records this edition, not a promise of future availability.",
+  "note": "Chapter citation inventory. Access dates preserve recorded verification; null means not recorded. Rebuilding does not verify external pages.",
   "sources": [
     {
       "url": "https://agents.md/",
@@ -22,6 +22,13 @@
         "docs/workflow/04-reading-map.md"
       ],
       "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/enterprise-strategy/mental-models-for-your-digital-transformation/",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
     },
     {
       "url": "https://cheatsheetseries.owasp.org/cheatsheets/AI_Agent_Security_Cheat_Sheet.html",
@@ -73,6 +80,13 @@
         "docs/backend/03-data-async-security.md"
       ],
       "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://classics.mit.edu/Aristotle/physics.1.i.html",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
     },
     {
       "url": "https://code.claude.com/docs/en/best-practices",
@@ -283,6 +297,20 @@
         "docs/backend/02-review-in-30-minutes.md"
       ],
       "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://doi.org/10.1207/s15516709cog1302_1",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
+    },
+    {
+      "url": "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
     },
     {
       "url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/",
@@ -595,6 +623,13 @@
       "accessed_on": "2026-10-21"
     },
     {
+      "url": "https://sre.google/sre-book/postmortem-culture/",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
+    },
+    {
       "url": "https://v2.tauri.app/concept/architecture/",
       "chapters": [
         "docs/cases/01-notes-app.md"
@@ -636,6 +671,55 @@
         "docs/frontend/01-visual-language.md"
       ],
       "accessed_on": "2026-10-21"
+    },
+    {
+      "url": "https://www.christenseninstitute.org/video/what-is-jobs-to-be-done-theory/",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
+    },
+    {
+      "url": "https://www.debuggingbook.org/html/Intro_Debugging.html",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
+    },
+    {
+      "url": "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
+    },
+    {
+      "url": "https://www.eiffel.com/values/design-by-contract/introduction/",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
+    },
+    {
+      "url": "https://www.law.uchicago.edu/socratic-method",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
+    },
+    {
+      "url": "https://www.nasa.gov/reference/6-8-decision-analysis/",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
+    },
+    {
+      "url": "https://www.psychologytoday.com/us/blog/seeing-what-others-dont/202101/the-pre-mortem-method",
+      "chapters": [
+        "docs/workflow/05-thinking-and-questioning.md"
+      ],
+      "accessed_on": "2026-10-22"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
