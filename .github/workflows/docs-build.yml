@@ -1,0 +1,83 @@
+name: Build and check handbook
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.md'
+      - 'scripts/**'
+      - 'assets/**'
+      - 'examples/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'references/source-verifications.json'
+      - '.github/workflows/docs-build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: handbook-main
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Install locked dependencies without lifecycle scripts
+        run: npm ci --ignore-scripts
+      - name: Build indexes and offline reader
+        run: |
+          npm run build:indexes
+          npm run build:reader
+          python3 scripts/check_docs.py
+      - name: Prepare browser
+        run: npx --no-install playwright install --with-deps chromium
+      - name: Check offline reader at desktop and narrow widths
+        run: node scripts/check_reader.mjs
+      - name: Retain reader check evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: reader-checks
+          path: .qa/
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Commit only generated documents after successful checks
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          current=$(git ls-remote origin refs/heads/main | cut -f1)
+          if [ "$current" != "$SOURCE_SHA" ]; then
+            echo 'A newer main commit exists. Skip writeback; its run will rebuild.'
+            exit 0
+          fi
+          git add -- GLOSSARY.md SOURCES.md references/source-index.json reader/index.html
+          if git diff --cached --quiet; then
+            echo 'Generated documents already match source.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'build: synchronize verified handbook reader and indexes'
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          GIT_CONFIG_COUNT=1 \
+          GIT_CONFIG_KEY_0=http.https://github.com/.extraheader \
+          GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $auth" \
+          git push origin HEAD:refs/heads/main

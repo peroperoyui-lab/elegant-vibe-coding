@@ -1,0 +1,17 @@
+{
+  "note": "Explicit human/assistant source checks. Update only after consulting the cited page; a build is not a verification.",
+  "verified_on": {
+    "https://www.law.uchicago.edu/socratic-method": "2026-10-22",
+    "https://www.christenseninstitute.org/video/what-is-jobs-to-be-done-theory/": "2026-10-22",
+    "https://classics.mit.edu/Aristotle/physics.1.i.html": "2026-10-22",
+    "https://www.designcouncil.org.uk/resources/the-double-diamond/": "2026-10-22",
+    "https://www.nasa.gov/reference/6-8-decision-analysis/": "2026-10-22",
+    "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/": "2026-10-22",
+    "https://www.eiffel.com/values/design-by-contract/introduction/": "2026-10-22",
+    "https://www.debuggingbook.org/html/Intro_Debugging.html": "2026-10-22",
+    "https://doi.org/10.1207/s15516709cog1302_1": "2026-10-22",
+    "https://www.psychologytoday.com/us/blog/seeing-what-others-dont/202101/the-pre-mortem-method": "2026-10-22",
+    "https://aws.amazon.com/blogs/enterprise-strategy/mental-models-for-your-digital-transformation/": "2026-10-22",
+    "https://sre.google/sre-book/postmortem-culture/": "2026-10-22"
+  }
+}

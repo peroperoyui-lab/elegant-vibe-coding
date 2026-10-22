@@ -22,9 +22,11 @@ const entries = [
   ['AI 协作','docs/workflow/02-prompt-recipes.md','02 · 22 份提示词'],
   ['AI 协作','docs/workflow/03-tools-and-commands.md','03 · 工具与命令'],
   ['AI 协作','docs/workflow/04-reading-map.md','04 · 资源阅读地图'],
+  ['AI 协作','docs/workflow/05-thinking-and-questioning.md','05 · 提问的思想'],
   ['完整实战','docs/cases/01-notes-app.md','01 · 桌面笔记应用'],
   ['完整实战','docs/cases/02-feature-walkthrough.md','02 · 资料导入走查'],
   ['完整实战','docs/cases/03-say-it-precisely.md','03 · 准确表达'],
+  ['完整实战','docs/cases/04-question-to-evidence.md','04 · 从提问到证据'],
   ['随手模板','templates/TASK-BRIEF.md','任务说明'],
   ['随手模板','templates/DESIGN-BRIEF.md','设计说明'],
   ['随手模板','templates/REVIEW-REPORT.md','审查记录'],
@@ -32,15 +34,18 @@ const entries = [
   ['随手模板','templates/HANDOFF.md','交接记录'],
   ['随手模板','templates/ADR.md','架构决定'],
   ['随手模板','templates/PROJECT-CONTEXT.md','项目上下文'],
+  ['随手模板','templates/QUESTION-CANVAS.md','提问画布'],
+  ['随手模板','templates/EXPERIMENT-CARD.md','实验卡'],
   ['验收与图解','checklists/frontend.md','前端验收清单'],
   ['验收与图解','checklists/backend.md','后端审查清单'],
   ['验收与图解','checklists/delivery.md','交付检查清单'],
+  ['验收与图解','checklists/thinking.md','思考与提问检查'],
   ['验收与图解','assets/README.md','原创图解导览'],
   ['验收与图解','examples/frontend-lab/README.md','设计实验室说明'],
   ['维护与来源','SOURCES.md','来源与核验'],
   ['维护与来源','CONTRIBUTING.md','维护这本手册'],
   ['维护与来源','CHANGELOG.md','更新记录'],
-  ['维护与来源','VALIDATION.md','本版验证记录'],
+  ['维护与来源','VALIDATION.md','1.0 验证记录'],
 ];
 const ids = new Set(entries.map(x=>x[1]));
 const escape = s => String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -127,9 +132,11 @@ lab=lab.replace('<link rel="stylesheet" href="tokens.css">',`<style>${labCss}</s
 lab=lab.replaceAll('href="../../docs/frontend/02-design-system.md"','href="#design-system" data-handbook-doc="docs/frontend/02-design-system.md"');
 // In srcdoc, native fragment URLs otherwise inherit the parent reader URL.
 lab=lab.replace('</body>',`<script>document.addEventListener('click',event=>{const chapter=event.target.closest('[data-handbook-doc]');if(chapter){event.preventDefault();parent.postMessage({type:'evc:open-chapter',id:chapter.dataset.handbookDoc},'*');return}const link=event.target.closest('a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.getAttribute('href').slice(1)));if(!target)return;event.preventDefault();if(!target.hasAttribute('tabindex'))target.setAttribute('tabindex','-1');target.focus({preventScroll:true});target.scrollIntoView({block:'start'});});</script></body>`);
-const data={edition:'2026-10-21',documents,images:Object.fromEntries(imageCache),lab};
+const data={edition:'2026-10-22',documents,images:Object.fromEntries(imageCache),lab};
 const payload=JSON.stringify(data).replaceAll('<','\\u003c').replaceAll('\u2028','\\u2028').replaceAll('\u2029','\\u2029');
 let template=await fs.readFile(path.join(root,'scripts/reader-template.html'),'utf8');
+// The edition date is not a blanket re-verification of every cited source.
+template=template.replace('资料核验 2026-10-21','核验日期见各章');
 template=template.replace('<!--BOOK_DATA-->',()=>`<script type="application/json" id="book-data">${payload}</script>`);
 await fs.mkdir(path.join(root,'reader'),{recursive:true});
 await fs.writeFile(path.join(root,'reader/index.html'),template);

@@ -2,6 +2,7 @@
 from pathlib import Path
 from collections import defaultdict
 from urllib.parse import urlsplit
+from datetime import date
 import json
 import re
 
@@ -62,6 +63,24 @@ def glossary():
     (ROOT/'GLOSSARY.md').write_text('\n'.join(lines),encoding='utf-8')
     return {name:len(data) for name,_,data in items}
 
+def source_dates():
+    """Preserve prior checks; rebuilding an index does not verify a URL."""
+    dates = {}
+    previous = ROOT/'references/source-index.json'
+    if previous.exists():
+        for item in json.loads(previous.read_text(encoding='utf-8')).get('sources', []):
+            dates[item['url']] = item.get('accessed_on')
+    overrides = ROOT/'references/source-verifications.json'
+    if overrides.exists():
+        data = json.loads(overrides.read_text(encoding='utf-8'))
+        for url, checked_on in data['verified_on'].items():
+            if not url.startswith(('https://', 'http://')):
+                raise ValueError(f'Expected an HTTP(S) source URL: {url}')
+            if date.fromisoformat(checked_on).isoformat() != checked_on:
+                raise ValueError(f'Expected YYYY-MM-DD for {url}')
+            dates[url] = checked_on
+    return dates
+
 def sources():
     links = defaultdict(set)
     for p in sorted((ROOT/'docs').rglob('*.md')):
@@ -73,29 +92,33 @@ def sources():
             clean=url.rstrip('>.,;')
             if 'example.' not in clean and 'localhost' not in clean:
                 links[clean].add(p.relative_to(ROOT).as_posix())
-    rows = [{'url':url, 'chapters':sorted(chapters), 'accessed_on':'2026-10-21'} for url,chapters in sorted(links.items())]
+    dates = source_dates()
+    rows = [{'url':url, 'chapters':sorted(chapters), 'accessed_on':dates.get(url)} for url,chapters in sorted(links.items())]
     (ROOT/'references').mkdir(exist_ok=True)
-    (ROOT/'references/source-index.json').write_text(json.dumps({'note':'Chapter citation inventory; access date records this edition, not a promise of future availability.','sources':rows},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'references/source-index.json').write_text(json.dumps({'note':'Chapter citation inventory. Access dates preserve recorded verification; null means not recorded. Rebuilding does not verify external pages.','sources':rows},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     lines = ['# 来源与核验说明', '', '[返回目录](README.md) · [资源阅读地图](docs/workflow/04-reading-map.md)', '',
         '## 这本手册怎样使用资料', '',
-        '本版查阅日期为 **2026-10-21**。设计规范与技术行为优先使用标准组织、工具维护者和厂商官方文档；社区仓库直接读取维护者说明。章节中的教学场景、中文指令、比较维度、图解和模板是围绕读者任务编排的原创内容。', '',
+        '初始版本记录的查阅日期为 **2026-10-21**；后续新增或复核的资料按各章及下表逐项记录。内容更新日期与资料查阅日期分别维护，重建索引本身不会更新查阅日期。设计规范与技术行为优先使用标准组织、工具维护者和厂商官方文档；社区仓库直接读取维护者说明。章节中的教学场景、中文指令、比较维度、图解和模板是围绕读者任务编排的原创内容。', '',
         '| 内容类型 | 采用方式 | 适用边界 |', '|---|---|---|',
         '| W3C / WAI、协议标准 | 核对具体条款、等级、条件和例外 | 抽取常用条款并不构成完整符合性认证 |',
         '| SQLite、Node、Git、框架官方文档 | 核对接口、事务、命令和实际语义 | 本机版本、配置和项目封装仍需确认 |',
         '| 编码工具官方文档 | 核对说明文件、命令与功能入口 | 版本与客户端会影响可用行为 |',
         '| 代表性开源仓库 | 介绍用途、可借鉴方法与采用成本 | README 核验与完整代码/安全/维护质量审计有不同范围 |',
+        '| 思考方法的原始研究、作者说明与机构资料 | 核对方法含义、研究对象与证据范围 | 迁移到 AI 协作的示例和组合为本手册编排，效果需按任务验证 |',
         '| 本手册建议 | 用任务、示例与证据解释取舍 | 可按现有项目简化和调整 |', '',
         '“热门”在这里落实为有代表性的公开项目清单；本版没有做趋势采样或按星标排名。资源越多，理解与维护成本也越多，选择应回到当前任务。', '',
         '## 易变信息怎样维护', '',
         '使用工具命令前确认本机版本与帮助；升级后重新核对规则文件加载方式。引用原页面可能重定向到维护者的新域名，优先使用正式的新入口。长期有效的设计判断，与某一版本的命令语法分别维护。', '',
+        '核验新来源或重新查阅后，在 [source-verifications.json](references/source-verifications.json) 登记 URL 与日期；生成器同时保留旧索引中的日期。没有日期记录的新 URL 会标为“未记录”，待实际查阅后补充。', '',
         f'## 章节引用索引 · {len(rows)} 个 URL', '',
         '以下由正文引用自动整理；同一页面的不同锚点保留，故 URL 数量不等同于独立文献数量。每条来源的具体用途见相应章节。机器可读清单为 [source-index.json](references/source-index.json)。', '',
-        '| 来源页面 | 出现章节 |', '|---|---|']
+        '| 来源页面 | 出现章节 | 记录的查阅日期 |', '|---|---|---|']
     for item in rows:
         u=item['url']; split=urlsplit(u)
         label=split.netloc+split.path+(('#'+split.fragment) if split.fragment else '')
         ch=' · '.join(f'[{Path(p).parent.name}/{Path(p).name[:2]}]({p})' for p in item['chapters'])
-        lines.append(f'| [{label}]({u}) | {ch} |')
+        checked = item['accessed_on'] or '未记录'
+        lines.append(f'| [{label}]({u}) | {ch} | {checked} |')
     lines.append('')
     (ROOT/'SOURCES.md').write_text('\n'.join(lines),encoding='utf-8')
     return len(rows)
